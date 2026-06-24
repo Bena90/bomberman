@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar Bomberman",
+            "type": "process",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-I", "C:\\SFML\\include",
+                "-L", "C:\\SFML\\lib",
+                "-o", "${workspaceFolder}\\bomberman.exe",
+                "${workspaceFolder}\\main.cpp",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        }
+    ]
+}

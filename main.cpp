@@ -1,11 +1,20 @@
-#include <iostream>
-
-using namespace std;
+#include <SFML/Graphics.hpp>
 
 int main()
 {
-    cout << "Bomberman - Programacion II" << endl;
-    cout << "Compilacion exitosa!" << endl;
+    sf::RenderWindow window(sf::VideoMode({800, 600}), "Bomberman");
+
+    while (window.isOpen())
+    {
+        while (auto event = window.pollEvent())
+        {
+            if (event->is<sf::Event::Closed>())
+                window.close();
+        }
+
+        window.clear(sf::Color::Blue);
+        window.display();
+    }
 
     return 0;
 }
