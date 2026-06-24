@@ -15,7 +15,7 @@ JugadorArchivo::JugadorArchivo(const char* nombre)
 
 bool JugadorArchivo::guardar(Jugador jugador)
 {
-    FILE* archivo = fopen(nombre, "rb");
+    FILE* archivo = fopen(nombre, "ab");
     if (archivo == nullptr)
         return false;
 
