@@ -11,6 +11,7 @@
                 "-L", "C:\\SFML\\lib",
                 "-o", "${workspaceFolder}\\bomberman.exe",
                 "${workspaceFolder}\\main.cpp",
+                "${workspaceFolder}\\Menu.cpp",
                 "-lsfml-graphics",
                 "-lsfml-window",
                 "-lsfml-system"
