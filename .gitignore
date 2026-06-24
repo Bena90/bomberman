@@ -1,0 +1,8 @@
+build/
+*.dat
+*.exe
+*.o
+*.obj
+.vscode/
+.vs/
+CMakeUserPresets.json
