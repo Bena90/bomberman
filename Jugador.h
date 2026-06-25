@@ -11,6 +11,7 @@ private:
     int puntaje;
     int cantBombas;
     int tipoBombas;
+    int radioBombas;
     Posicion posicion;
 
 public:
@@ -25,6 +26,8 @@ public:
     void setCantBombas(int cantBombas);
     int getTipoBombas();
     void setTipoBombas(int tipoBombas);
+    int getRadioBombas();
+    void setRadioBombas(int radioBombas);
     Posicion getPosicion();
     void setPosicion(Posicion posicion);
     void sumarPuntos(int puntos);

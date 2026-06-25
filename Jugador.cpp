@@ -8,6 +8,7 @@ Jugador::Jugador()
     puntaje = 0;
     cantBombas = 1;
     tipoBombas = 0;
+    radioBombas = 1;
     posicion = Posicion(1, 1);
 }
 
@@ -60,6 +61,16 @@ int Jugador::getTipoBombas()
 void Jugador::setTipoBombas(int tipoBombas)
 {
     this->tipoBombas = tipoBombas;
+}
+
+int Jugador::getRadioBombas()
+{
+    return radioBombas;
+}
+
+void Jugador::setRadioBombas(int radioBombas)
+{
+    this->radioBombas = radioBombas;
 }
 
 Posicion Jugador::getPosicion()
