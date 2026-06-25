@@ -13,6 +13,7 @@ private:
 
 public:
     Enemigo();
+    virtual ~Enemigo();
     Enemigo(int vidas, int nivel, int puntos, Posicion posicion);
     int getVidas();
     void setVidas(int vidas);

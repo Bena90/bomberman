@@ -8,6 +8,10 @@ Enemigo::Enemigo()
     posicion = Posicion(0, 0);
 }
 
+Enemigo::~Enemigo()
+{
+}
+
 Enemigo::Enemigo(int vidas, int nivel, int puntos, Posicion posicion)
 {
     this->vidas = vidas;
