@@ -49,7 +49,7 @@ bool MapaArchivo::leer(Mapa& mapa)
     int ancho = datos[2];
     int alto = datos[3];
 
-    mapa = Mapa(id, nivel, ancho, alto);
+    mapa.inicializar(id, nivel, ancho, alto);
 
     archivo = fopen(nombreCeldas, "rb");
     if (archivo == nullptr)

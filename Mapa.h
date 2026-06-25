@@ -25,6 +25,7 @@ public:
     int* getCeldas();
     int getCelda(int x, int y);
     void setCelda(int x, int y, int valor);
+    void inicializar(int id, int nivel, int ancho, int alto);
 };
 
 #endif

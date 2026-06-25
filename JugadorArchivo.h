@@ -11,6 +11,7 @@ private:
 public:
     JugadorArchivo();
     JugadorArchivo(const char* nombre);
+    
     bool guardar(Jugador jugador);
     Jugador leer(int indice);
     int cantidadRegistros();

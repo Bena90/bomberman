@@ -84,3 +84,18 @@ void Mapa::setCelda(int x, int y, int valor)
     if (x >= 0 && x < ancho && y >= 0 && y < alto)
         celdas[y * ancho + x] = valor;
 }
+
+void Mapa::inicializar(int id, int nivel, int ancho, int alto)
+{
+    if (celdas != nullptr)
+        delete[] celdas;
+
+    this->id = id;
+    this->nivel = nivel;
+    this->ancho = ancho;
+    this->alto = alto;
+    celdas = new int[ancho * alto];
+
+    for (int i = 0; i < ancho * alto; i++)
+        celdas[i] = 0;
+}
